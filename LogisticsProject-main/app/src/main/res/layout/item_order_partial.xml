@@ -1,0 +1,22 @@
+<!-- item_order_partial.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID: Unknown"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Date: Not Set"
+        android:textSize="14sp" />
+
+</LinearLayout>

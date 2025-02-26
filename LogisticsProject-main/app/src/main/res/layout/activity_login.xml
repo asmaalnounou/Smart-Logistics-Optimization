@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Card with Form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            tools:context=".Login">
+
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:src="@drawable/login_icon"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginBottom="24dp"/><!-- Centers horizontally -->
+
+
+
+            <!-- Ensures the image fills the view and is centered -->
+
+
+            <EditText
+                android:id="@+id/email_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee Email"
+                android:inputType="text"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColorHint="#000000"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/password_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textColorHint="#000000"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Forgot Password Text -->
+            <TextView
+                android:id="@+id/ForgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Forgot Password?"
+                android:textColor="#008577"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:clickable="true"
+                android:onClick="forgotPasswordMethod" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/LogInBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF5722"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="24dp"
+                android:onClick="loginMethod" />
+
+            <!-- Register Text -->
+            <TextView
+                android:id="@+id/NewRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Register with us!"
+                android:textSize="18sp"
+                android:textColor="#008577"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:onClick="registerPage" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

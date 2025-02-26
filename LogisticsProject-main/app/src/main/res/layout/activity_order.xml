@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal"
+        tools:context=".SignUpActivity">
+
+    <!-- Horizontal Layout for ImageButton and TextView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- ImageButton -->
+        <ImageView
+            android:id="@+id/returnIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Back"
+            android:onClick="onClick"
+            android:src="@drawable/back_icon" />
+
+        <!-- TextView -->
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Create order"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" /><!-- Space between ImageButton and TextView -->
+
+    </LinearLayout>
+    <!-- Card with Form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/editTextOrderId"
+            android:layout_width="488dp"
+            android:layout_height="48dp"
+            android:hint="@string/orderID"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/editTextDeliveryDate"
+            android:layout_width="488dp"
+            android:layout_height="48dp"
+            android:hint="@string/date"
+            android:autofillHints="none"
+            android:inputType="date"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/editTextCustomerDetails"
+            android:layout_width="488dp"
+            android:layout_height="48dp"
+            android:hint="@string/customerDet"
+            android:autofillHints="none"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/editTextOrderAmount"
+            android:layout_width="488dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:hint="@string/OrAmount"
+            android:autofillHints="none"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:id="@+id/editTextOrderWeight"
+            android:layout_width="488dp"
+            android:layout_height="48dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/OrWeight"
+            android:autofillHints="none"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/driver"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_gravity="start"
+            android:paddingTop="15dp"
+            android:paddingBottom="1dp"
+            />
+
+        <Spinner
+            android:id="@+id/AssignDriverSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:layout_gravity="start"
+            android:paddingBottom="1dp" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/cities_array" />
+
+
+        <Button
+            android:id="@+id/buttonSubmitOrder"
+            android:layout_width="320dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Submit Order"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:backgroundTint="#FF5722"
+            android:layout_marginBottom="16dp"
+            android:onClick="submitOrder" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

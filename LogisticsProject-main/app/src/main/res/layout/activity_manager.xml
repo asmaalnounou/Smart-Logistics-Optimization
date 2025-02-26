@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    tools:context=".Manager">
+
+    <!-- Welcome Section -->
+    <LinearLayout
+        android:id="@+id/welcomeSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Image Button -->
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="73dp"
+            android:layout_height="69dp"
+            android:background="@android:color/transparent"
+            android:onClick="logoutMethod"
+            android:src="@drawable/logout_icon" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Welcome, \n[]!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/welcomeSection"
+        android:layout_above="@id/bottom_navigation"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Create Order Button -->
+        <Button
+            android:id="@+id/buttonCreateOrder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF5722"
+            android:onClick="createOrder"
+            android:text="Create Order"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <!-- Track Order Button -->
+        <Button
+            android:id="@+id/buttonTrackOrder"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF5722"
+            android:text="Track Order"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <!-- Image Banner -->
+
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF5722"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>
+

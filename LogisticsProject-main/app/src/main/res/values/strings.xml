@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">lab4</string>
+    <string name="wr">Write Your Name</string>
+    <string name="wr2">Write Your Email</string>
+    <string name="send">Send</string>
+    <string name="createO">Create Order</string>
+    <string name="orderID">Order ID</string>
+    <string name="date">Delivery Date (YYYY-MM-DD)</string>
+    <string name="customerDet">Customer Details</string>
+    <string name="OrAmount">Order Amount</string>
+    <string name="OrWeight">Order Weight (kg)</string>
+    <string name="OrType">Order Type</string>
+    <string name="Sub">Submit Order</string>
+    <string name="city">Choose City</string>
+    <string name="driver">Choose Driver</string>
+    <string name="done">Done</string>
+    <string name="Jstores">Jeddah Supermarkets</string>
+    <string name="dan">Danube</string>
+    <string name="panda">Panda</string>
+    <string name="othaim">Othaim</string>
+    <string-array name="drivers">
+        <item>-</item>
+    </string-array>
+    <string-array name="cities_array">
+        <item>Choose city</item>
+        <item>Jeddah</item>
+        <item>Makkah</item>
+    </string-array>
+
+    <string-array name="status_options">
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+</resources>

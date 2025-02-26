@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:elevation="6dp"> <!-- Simulate CardView elevation -->
+
+    <!-- Order Header (Order ID + Status) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <!-- Order ID -->
+        <TextView
+            android:id="@+id/textOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order ID: 12345"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <!-- Status Indicator -->
+        <TextView
+            android:id="@+id/textOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Pending"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_orange_light"
+            android:layout_gravity="end"
+            android:paddingHorizontal="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Delivery Date -->
+    <TextView
+        android:id="@+id/textDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Date: 2024-12-01"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- Customer Details -->
+    <TextView
+        android:id="@+id/textCustomerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer: John Doe"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- Assigned Driver -->
+    <TextView
+        android:id="@+id/textAssignedDriver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver: Alice Smith"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <!-- City -->
+    <TextView
+        android:id="@+id/textCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: Jeddah"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+</LinearLayout>
